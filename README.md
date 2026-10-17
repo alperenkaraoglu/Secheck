@@ -1,18 +1,18 @@
-> ⚠️ **Yasal Uyarı (Legal Disclaimer):** Secheck, yalnızca eğitim, güvenlik araştırmaları ve yetkili olunan sistemlerin güvenlik duruşunu denetlemek amacıyla geliştirilmiştir. İzinsiz sistemlerde aktif tarama modüllerinin kullanılmasından doğabilecek sorumluluk kullanıcıya aittir.
+>  **Yasal Uyarı (Legal Disclaimer):** Secheck, yalnızca eğitim, güvenlik araştırmaları ve yetkili olunan sistemlerin güvenlik duruşunu denetlemek amacıyla geliştirilmiştir. İzinsiz sistemlerde aktif tarama modüllerinin kullanılmasından doğabilecek sorumluluk kullanıcıya aittir.
 
-# 🛡️ Secheck — Web Güvenlik, Port & Tehdit İstihbarat Platformu
+#  Secheck — Web Güvenlik, Port & Tehdit İstihbarat Platformu
 
 **Secheck**, FastAPI ile geliştirilmiş modern bir **Web Güvenlik Denetimi, Aktif/Pasif Keşif (Reconnaissance) ve Tehdit İstihbaratı Panelidir**. Kullanıcıya hem **Tam Denetim Modu** (14 TCP Port Banner yakalama ve 30 kritik dizin taraması dahil) hem de **Pasif / Güvenli Mod** (hedefe yalnızca 1 adet standart HTTP isteği göndererek SSL/TLS, HTTP başlıkları, çerezler, HTML kaynak kod kazıma, Google DoH SPF/DMARC ve Shodan InternetDB CVE analizi yapan mod) sunar.
 
 ---
 
-## 🎯 Projenin Amacı
+##  Projenin Amacı
 
 Web uygulamalarında sıkça unutulan güvenlik başlıklarını, zayıf çerez bayraklarını, süresi dolmak üzere olan SSL sertifikalarını, dış dünyaya açık unutulan yönetim/veritabanı portlarını (`21, 22, 23, 3306, 5432, 6379`), Shodan CVE zafiyetlerini, SPF/DMARC e-posta sahteciliği risklerini ve hassas dosyaları (`/.env`, `/.git/config`, `/backup.sql` vb.) tek bir ekran üzerinden tespit etmek ve doğrudan uygulanabilir sıkılaştırma (Remediation) önerileri sunmaktır.
 
 ---
 
-## ✨ "Cyber-Security Glassmorphism" Arayüz Özellikleri
+##  "Cyber-Security Glassmorphism" Arayüz Özellikleri
 
 - **Derin Uzay Karanlık Teması (`#0B0F19`):** Göz yormayan siber güvenlik operasyon merkezi (SOC) renk paleti ve ince ızgara (grid) arka plan dokusu.
 - **Buzlu Cam Kartlar (Glassmorphism):** `bg-slate-900/60 backdrop-blur-md border border-slate-800` sınıflarıyla yarı saydam, katmanlı modül kartları.
@@ -22,7 +22,7 @@ Web uygulamalarında sıkça unutulan güvenlik başlıklarını, zayıf çerez 
 
 ---
 
-## 🔍 Kontrol Edilen Güvenlik Metrikleri
+##  Kontrol Edilen Güvenlik Metrikleri
 
 1. **Hedef İstihbaratı (Target Intel):**
    - `urllib.parse` ile URL normalizasyonu (`http/https` kontrolü ve saf `hostname` ayıklama).
@@ -41,7 +41,7 @@ Web uygulamalarında sıkça unutulan güvenlik başlıklarını, zayıf çerez 
 
 ---
 
-## 📊 Ağırlıklı Puanlama Algoritması (0 – 100 Puan)
+##  Ağırlıklı Puanlama Algoritması (0 – 100 Puan)
 
 Toplam güvenlik skoru 4 ana kategorinin toplamından ve varsa **Kritik Zafiyet Cezalarından** oluşur:
 
@@ -79,7 +79,7 @@ Toplam güvenlik skoru 4 ana kategorinin toplamından ve varsa **Kritik Zafiyet 
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma Adımları
+##  Kurulum ve Çalıştırma Adımları
 
 ### 1. Gereksinimleri Yükleyin
 Proje dizininde bulunan `requirements.txt` dosyasındaki bağımlılıkları kurun:
@@ -105,7 +105,7 @@ http://127.0.0.1:8000
 
 ---
 
-## 📁 Proje Dizin Yapısı
+##  Proje Dizin Yapısı
 
 ```text
 ├── main.py                # FastAPI uygulaması, keşif motoru ve ağırlıklı puanlama algoritması
